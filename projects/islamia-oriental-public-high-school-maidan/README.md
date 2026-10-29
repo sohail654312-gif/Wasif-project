@@ -12,6 +12,10 @@
 
 **Read:** [Role-Based Parent & School Portals — Fingerprint, Fees, Accounting & Attendance](PORTALS_AND_WORKFLOWS.md) and [School-owned WhatsApp + SMS Messaging Automation](COMMUNICATIONS_AUTOMATION.md). The five initial priorities remain, with a **sixth confirmed communications module** (WhatsApp and SMS, bulk messaging, inbound WhatsApp automated handling, and human takeover). The two portal experiences, permission-scoped data, single source of truth and noncoding status remain unchanged. Other proposals are optional until approved.
 
+## Phased implementation roadmap (planning only)
+
+The [Dedicated School OS Implementation Roadmap](IMPLEMENTATION_ROADMAP.md) records nine gated phases (0–8) spanning school discovery, isolated architecture, Parent and School Portals, attendance/fingerprint, fees, accounting, meetings, WhatsApp/SMS automation and final school-controlled handover. **No coding is authorized and none has been started.**
+
 ## مقصد / Vision
 
 اسلامیہ اورینٹل پبلک ہائی اسکول میدان کے لیے ایک مربوط School Management & Automation System تیار کرنا، تاکہ حاضری، والدین سے رابطہ، والدین/اساتذہ کی میٹنگز، فیس وصولی اور اسکول کی اکاؤنٹنگ ایک محفوظ نظام سے چلیں۔
