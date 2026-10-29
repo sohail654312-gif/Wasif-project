@@ -10,11 +10,12 @@
 ## 0. Explicit client instructions (confirmed)
 
 1. A **dedicated installation** for this school, with control of the data, accounts, infrastructure, approvals and access in the school's hands. Codeedge cannot silently view school data and has **no standing admin access**.
-2. Five current priority domains in this order: **(1) fingerprint attendance, (2) fee collection, (3) accounting, (4) overall attendance, (5) role-based parent and school portals**, all connected.
+2. The initial five priority domains in this order: **(1) fingerprint attendance, (2) fee collection, (3) accounting, (4) overall attendance, (5) role-based parent and school portals**, all connected.
 3. **Two distinct application experiences**: **Parent Portal** and **School Portal** (the school portal contains permission-specific teacher, principal/admin and accountant pages, rather than giving all staff the same privileges).
 4. Parent can view their own linked pupil(s)' **fees due, fees paid, payments, receipts and attendance**, in one app; school can manage and view the appropriately authorized corresponding records. Teacher sees own assigned students' attendance; principal sees school-level attendance and authorized summaries.
 5. Financial and attendance records are stored **once as the authoritative source of truth**, not copied into separate parent/school ledgers. Each portal displays a scoped, live view of those same records.
 6. Capture/plan/document requirements now; **do not start coding, deploy, provision, connect devices, collect real biometrics or change other repositories** without a later instruction.
+7. **Sixth confirmed requirement (added 2026-10-29):** school-controlled WhatsApp automation, automated SMS, approved bulk WhatsApp/SMS, and secure inbound WhatsApp auto-handling with staff takeover. [Read the detailed Communications Automation requirements](COMMUNICATIONS_AUTOMATION.md). Parent sees own notifications and school staff control campaigns and inbox according to role. No coding or message sending authorized.
 
 ## 1. Product boundaries and portals
 
@@ -223,3 +224,14 @@ DEDICATED SCHOOL SYSTEM
 | UI design, database migration, coding, deployment | Not started / not authorized |
 
 **Next step:** Gather additional requirements from the user and school leadership. No implementation is authorized by this document.
+
+## 11. Communications Automation — Sixth confirmed module
+
+[Full WhatsApp, Bulk WhatsApp, SMS, Bulk SMS, Inbound Auto-Handling and School/Parent Portal specification](COMMUNICATIONS_AUTOMATION.md).
+
+- School Portal: message composer, permission-checked recipient segmentation, template preview and approval, scheduling, provider budget, bulk sending, delivery reports, school-owned shared inbox and human handoff.
+- Parent Portal: own child notices, receipts/attendance reminders and messages/preferences, with secure authenticated child information only.
+- Outbound fee/attendance alerts are driven by validated underlying records; messaging must never automatically set a fee as paid or mark a child present without verified source and authorization.
+- WhatsApp inbound bot answers verified school FAQs, routes personal financial/attendance queries to guardian-authenticated access and escalates sensitive or uncertain cases to authorized staff.
+- Meta-approved templates/service windows, consent, sender policy, anti-spam, provider fees, child-data protection, support-access restrictions, retries and duplicate suppression are release gates.
+- **Not implemented / no provider connected or live messages sent.**
