@@ -156,3 +156,66 @@ These are suggested modules for a reusable **Codeedge School OS** product. The s
 
 ### Commercial model (illustrative; prices to be researched/approved)
 One-time implementation/setup + recurring per-school subscription/support, plus separately priced provider consumption (WhatsApp/SMS/telephony/payment fees); optional add-ons for academics, parent portal and AI support. No unverified performance or revenue guarantees.
+
+---
+
+## 11) Confirmed Direction — Fully Dedicated School Deployment + Biometric Attendance (2026-10-29)
+
+**Latest client intent takes precedence over prior generic multi-school/SaaS ideas for this school's delivery.** This is a **dedicated, school-controlled installation**. The school owner/principal is the ultimate system administrator. Codeedge does not have default or continuous visibility into operational, student, family, finance, or biometric records. Support only through explicit, scoped, time-limited school authorization and auditable access. The choice of source code ownership/escrow and support contractual rights is to be decided with school leadership, but school operational control and export rights must not rely on Codeedge approval.
+
+### A) Dedicated ownership and infrastructure
+
+- Deployment: school-specific application instance, logically and operationally isolated environment, database and file storage, dedicated secrets/credentials, backups and monitoring.
+- School owns its admin accounts, roles, access decisions, domain, data exports and recovery processes; infrastructure accounts and billing should be set up in the school's name where practical, not on the provider's personal accounts.
+- No Codeedge central admin console, shared credentials, hidden access route, hidden support account, or automatic cross-school reporting. Support time-bound and school-approved, with audit events, revocation and emergency access only under explicitly agreed policy.
+- Separate PRIVATE implementation repository. This PUBLIC Wasif-project folder holds high-level design and planning only, no school pupil names, guardian contact data, bank data, biometric images/templates, live credentials, IP addresses or sensitive architecture secrets.
+- School-only backups (encrypted), tested restoration, hosting and device administrator account handover and exit/export plan, documented incident response.
+- Dedicated does not inherently mean on-premise: compare school-owned cloud hosting versus on-premise or hybrid/offline, factoring internet/power reliability, costs and staff capacity.
+- Preserve existing Codeedge Business OS, MVP, CIGO and Finance repositories; copy no production data and make no uncontrolled cross-system connections.
+
+### B) Fingerprint attendance — teachers
+
+- Approved biometric attendance reader for staff check-in/out, with class/calendar/roster mappings and late/absence reports.
+- Staff enrollment only under documented notice/consent or another appropriate legal basis confirmed by local counsel, with fallback card/manual method.
+- Staff role and approved roster determines when an event counts as entry/exit; prevent duplicate events; support shift changes, multiple check-ins and leave.
+- No payroll deductions or disciplinary action automatically based solely on biometric scores; authorized human review of disputes and corrections.
+
+### C) Fingerprint attendance — students (gated deployment)
+
+- **Requested feature**: fingerprint scan for pupil attendance at arrival and optional departure, linked to school-managed student IDs.
+- **Gating requirements before any real biometric enrollment**: documented necessity/proportionality assessment; school-led privacy impact assessment; local legal review; guardian informed authorization, child's age-appropriate assent and objection/withdrawal policy; device/security evaluation and pilot success.
+- A non-biometric alternative (school card or teacher-verified manual attendance) always available with no penalty or exclusion.
+- No raw fingerprint photos uploaded to application server/GitHub or Codeedge. Prefer vetted device-local protected templates and local matching; server receives only verified signed/validated attendance events (opaque unique reference, student/staff ID, device ID, event timestamp, match result, ingestion/audit ID).
+- If selected hardware cannot guarantee safe template storage, deletion, vendor export restrictions and privacy protections, **do not deploy pupil biometrics**: use cards/manual records instead. Encrypted templates remain sensitive and must never be casually copied.
+- Enrollment, withdrawn consent, school departure and deletion/retention procedures must be auditable; individual templates deleted both in system and connected terminal when no longer needed.
+- Device lock-down, authenticated API bridge, no open public IP exposure, network segmentation, signed event or equivalent verification, clock sync, offline queue, tamper protection, duplicate and replay detection, and hardware failure fallback.
+- Guardians can see their own child's attendance/notifications only; no public child scanning or live movement tracking.
+- No face recognition required; biometric attendance is **proposed, not implemented**.
+- Hardware choice depends on verified protocol/SDK, supported Pakistan supply/support, offline mode, encrypted template support, clear deletion capability and acceptable performance with the school's student volume. Do not select hardware on marketing claims alone.
+
+### D) Proposed component boundaries
+
+School-owned portal/mobile-friendly web app
+  -> role-checked School OS API
+  -> school-owned attendance, students, fees, meetings, accounts database
+  -> approved hardware bridge (on-site LAN / controlled secure gateway)
+  -> biometric terminals holding protected templates only
+  -> school-controlled notifications provider (opt-in)
+  
+Each boundary logs access and avoids raw biometric transfer. School administration controls credential rotation and provider subscriptions.
+
+### E) Revised delivery gates
+
+1. Confirm legal/privacy and whether biometrics are necessary before purchase.
+2. Build/test core student/teacher attendance with cards/manual inputs first.
+3. Integrate one staff fingerprint terminal in a controlled test using fictional data; assess device connector, offline sync, data deletion and audit.
+4. Obtain approval for staff pilot and independently verify reports.
+5. Only after guardian information/consent, child safeguards and legal review, run opt-in small-scale pupil pilot with alternative attendance.
+6. Test scalability, outage, duplicate scans, withdrawals, corrections and guardian permissions.
+7. Move to production only on principal's written acceptance with school-owned admin credentials and private infrastructure; Codeedge access defaults OFF.
+
+### F) Open questions to decide later
+
+Exact fingerprint hardware/vendor; number of staff/students and peak entry time; whether arrival only or arrival/departure; school electricity/internet reliability; campus layout and terminals count; school-owned cloud vs on-prem vs hybrid; guardian consent process; legal/privacy professional approval; support authorization method; system/data/source ownership contract; budget and maintenance responsibilities.
+
+**No student or teacher fingerprints have been collected; no scanner/device, hosted infrastructure or live service has been provisioned by this change.**
