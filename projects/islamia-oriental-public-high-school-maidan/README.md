@@ -101,3 +101,58 @@
 | Deployment | Not started |
 
 **Change policy:** نئی ضروریات اسی دستاویز کے ساتھ ورژن کے مطابق شامل کی جائیں؛ نئی خصوصیات کو implementation کی جگہ draft سمجھا جائے جب تک باقاعدہ test اور acceptance نہ ہو۔
+
+---
+
+## 10) Expanded School OS Discovery Catalog — PROPOSALS, NOT APPROVED SCOPE (2026-10-29)
+
+These are suggested modules for a reusable **Codeedge School OS** product. The school must confirm necessity, policies, available staff and budget. Recording these does **not** approve implementation or mean the capabilities exist.
+
+### Essential school administration
+1. **Student information system:** unique IDs, class/section, guardians and sibling relationships, admission history, transfers/withdrawals, enrollment status, identity checks and correction logs.
+2. **Admissions CRM:** school enquiry, application, documents, screening, eligibility, waitlist, decision, admission receipt, class allocation; school staff retain final admission decisions.
+3. **Attendance:** class/date roll call, leave requests, late/absent, corrections and approvals, guardian notification rules, seasonal/holiday calendar, student/class trends.
+4. **Fees and receivables:** annual/monthly/term fees, fee heads, concessions, sibling discounts, arrears, carry-forwards, scholarship/waiver approvals, partial/multiple payments, receipts, aging, refunds and reversals.
+5. **Accounting:** cashbook, bankbook, expense vouchers, general ledger, reconciliation, daily closing, authorized adjustments, collections, P&L and outstanding reports; qualified accountant verifies local reporting/tax needs.
+6. **Communications:** school notices, class-specific notifications, templates, approved WhatsApp/SMS/email providers, consent and opt-out, delivery statuses, no public exposure of student details.
+7. **Principal dashboard:** attendance, fee recovery, overdue balances, unpaid follow-ups, meetings, admissions funnel, upcoming exams, tasks, role-scoped alerts.
+
+### Academic and parent experience
+8. **Academics:** academic year, timetable, course/subject allocation, period schedule, holidays, examination seating, substitutes.
+9. **Assessments:** exam scheduling, marking, grading rules, teacher review, moderated results, downloadable report cards, promotion after authorized approval.
+10. **Homework:** assignments, attachments, submission statuses, teacher comments, due dates, guardian visibility.
+11. **Parent-teacher meetings:** availability, appointments, confirmations, rescheduling, authorized notes, follow-up tasks.
+12. **Parent portal:** guardian-only children, attendance, homework, notices, fees, receipts, meeting requests, requests/corrections.
+13. **Teacher portal:** roster, attendance marking, homework, marks entry, timetable, announcements.
+14. **Certificates/documents:** fee clearance, admission confirmation, leaving and transfer certificates, official issuance audit.
+15. **Student support:** private safeguarding/escalation workflow, parent contacts, emergency contacts, minimum-necessary sensitive data with strictly restricted access.
+
+### Operations and later additions
+16. **Staff HR / payroll:** contracts, staff attendance/leave, salary schedules, payslips, employment audit.
+17. **Library and stock:** book lending/returns, late items, inventory, asset tagging, procurement approvals.
+18. **Transport:** optional bus routes, assigned guardian/pickup arrangements, driver permissions and safe contact controls.
+19. **Website:** admissions and enquiry form, school noticeboard, faculty/contact information with verified content and publication approvals.
+20. **AI assistant:** FAQ chatbot for public school information, staff draft assistance and retrieval over approved school knowledge only; no autonomous marks, disciplinary or fee waivers; human handoff and restricted child data.
+21. **Multi-school product:** tenant isolation and school-specific configurations once single-school acceptance passes.
+
+### Proposed phased delivery
+- **Phase 0 — Discovery and security:** confirm policies, staff/student count, process diagrams, education calendar, privacy, permission matrix, import plan, demo-only data.
+- **Phase 1 — Core MVP:** students/guardians/classes, teacher attendance, attendance report, fee schedule and paid/unpaid dashboard, manual payment receipts, basic admin dashboard and CSV exports.
+- **Phase 2 — Communication and workflow:** guardian notifications with consent and provider checks, parent meeting bookings, admissions pipeline, roles/audits/backup restore verification.
+- **Phase 3 — Academics:** teacher portal, timetable, exams/results, report cards, homework, parent portal.
+- **Phase 4 — Financial operations:** full accounting reconciliation, expense controls, periodic closing, supplier payments and optional HR/payroll where approved.
+- **Phase 5 — Advanced:** AI FAQ, library, transport, digital payment gateway only after provider review, multi-school SaaS only after independent security acceptance.
+
+### Engineering principles
+- Separate new **private** source repository for the deployed application; the public Wasif-project repo is an index/specification only.
+- Reuse audited **patterns** from Codeedge Business OS (auth/roles, booking, messaging adapters, external-effect policy, demo separation) and evaluate the Finance Suite/ERPNext/Frappe Education options; avoid modifying frozen existing products.
+- Explicit states for development/demo/staging/production. No real student data in GitHub or demos. Secure hosted storage, encrypted backups, retention/deletion policy, least privilege, student-level guardian authorization and admin MFA.
+- Restricted, append-only financial history where appropriate, immutable receipts with reversal/void workflows, idempotent payment posting and double-entry reconciliation for accounting.
+- Each user-visible academic/financial report is reproducible; mark revisions and approvals; restore backups tested.
+- Pakistan-specific needs: Urdu/English UI, PKR, school-specific annual/term cycles, irregular internet connectivity, print-friendly receipts/results, no hard-coded board or fee rules.
+- External WhatsApp/SMS messaging requires provider integration, lawful permissions/opt-in and budget; Meta template rules and 24-hour service windows apply.
+- Do not claim AI is replacing teachers or administrators. No biometric attendance or face recognition in core MVP.
+- **Open decisions:** enrollment counts; branches; grades/sections; fee structures; available staff; classes; parent's preferred channel; language; deployment budget; internet reliability; actual bank/payment method; requirements from principal/accountant; local legal review.
+
+### Commercial model (illustrative; prices to be researched/approved)
+One-time implementation/setup + recurring per-school subscription/support, plus separately priced provider consumption (WhatsApp/SMS/telephony/payment fees); optional add-ons for academics, parent portal and AI support. No unverified performance or revenue guarantees.
