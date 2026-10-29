@@ -5,8 +5,8 @@
 ## Projects
 
 - [Islamia Oriental Public High School Maidan — School Management & Automation](projects/islamia-oriental-public-high-school-maidan/README.md)  
-  **Status:** Dedicated school-controlled system; five confirmed priorities: fingerprint attendance, fee collection, accounting, general attendance and role-based Parent/School portals. Requirements documented only; implementation not started.  
-  [Detailed portal and workflow requirements](projects/islamia-oriental-public-high-school-maidan/PORTALS_AND_WORKFLOWS.md)
+  **Status:** Dedicated school-controlled system; six confirmed modules: fingerprint attendance, fee collection, accounting, general attendance, role-based Parent/School portals and WhatsApp/SMS messaging automation. Requirements documented only; implementation not started.  
+  [Detailed portal and workflow requirements](projects/islamia-oriental-public-high-school-maidan/PORTALS_AND_WORKFLOWS.md) · [WhatsApp/SMS requirements](projects/islamia-oriental-public-high-school-maidan/COMMUNICATIONS_AUTOMATION.md)
 
 ## Areas of Work
 
