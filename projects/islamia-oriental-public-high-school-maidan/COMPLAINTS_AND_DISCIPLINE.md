@@ -165,3 +165,16 @@ This is **core module 7** and an explicit requirement, but subject to discovery 
 - Phase 8: safeguarding, permissions, retaliation, analytics fairness, sending/delivery and end-to-end acceptance testing.
 
 **No code, student record, complaints, device, real communications, call integration or purchases are authorized by this design document.**
+
+
+## 12. Urdu + English Complaint Creation, Reports and Notices
+
+[Language and translation policy](BILINGUAL_LANGUAGE_POLICY.md).
+
+- Parents and teachers can **write complaints and student incident descriptions in اردو or English**; school cases store the original text and source language unchanged, with full Unicode support.
+- Principal/authorized reviewer may inspect original and separately labelled reviewed translation where necessary. Case decisions and interpretations remain human-controlled, particularly for accusations and safeguarding reports.
+- Staff may draft teacher/student/guardian notice in either language or an approved bilingual form; approved WhatsApp/SMS message content and exact sent-language variant are linked to each case contact log.
+- Complaint categories, investigation statuses and staff-complaint counts are stable structured IDs, not dependent on Urdu/English spellings. Teacher analytics remain status/finding-separated; no public accusation or automated punishment.
+- Complaint acknowledgement/updates may follow parent language preference, but privacy and alternate reviewer/safeguarding controls take precedence.
+- All authorised case logs, print exports and message preview screens preserve Urdu RTL properly, with dates and contact reference readable.
+- **No real complaints, messages, translations or code have been generated/activated.**
