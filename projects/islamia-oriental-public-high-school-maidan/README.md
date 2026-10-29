@@ -7,6 +7,11 @@
 
 > اس دستاویز میں صرف ابتدائی ضروریات محفوظ کی گئی ہیں۔ اسکول کی اصل معلومات، فیس کی رقم، پالیسی، برانچز اور رابطہ تفصیلات ابھی تصدیق نہیں ہوئیں۔ مزید ضروریات بعد میں شامل کی جائیں گی۔
 
+
+## Current prioritized requirements (supersedes earlier broad feature proposals)
+
+**Read:** [Role-Based Parent & School Portals — Fingerprint, Fees, Accounting & Attendance](PORTALS_AND_WORKFLOWS.md). This document specifies the user-confirmed five priorities, two portal experiences, role-scoped views, shared source-of-truth records, privacy gates and noncoding status. All other suggested features remain optional until explicitly approved.
+
 ## مقصد / Vision
 
 اسلامیہ اورینٹل پبلک ہائی اسکول میدان کے لیے ایک مربوط School Management & Automation System تیار کرنا، تاکہ حاضری، والدین سے رابطہ، والدین/اساتذہ کی میٹنگز، فیس وصولی اور اسکول کی اکاؤنٹنگ ایک محفوظ نظام سے چلیں۔
