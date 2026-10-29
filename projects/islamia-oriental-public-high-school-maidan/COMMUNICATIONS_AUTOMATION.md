@@ -118,3 +118,16 @@ All data school-scoped, access controlled, auditable. Encryption, backup, retent
 ## 9. Case-linked Complaints and Guardian Calling (added 2026-10-29)
 
 See [Complaint Center & Student Concerns](COMPLAINTS_AND_DISCIPLINE.md). Authorized teacher/principal may propose school-approved messages about a child's concern. After consent/policy checks and safety review, the system can send privacy-minimized WhatsApp/SMS to the **verified** linked guardian, record per-case message body/template reference, school approver, attempts, delivery status and human response. Phone contact initially is staff-initiated with a call-log form (attempt timestamp, authorized caller, reached/unreachable, notes and follow-up); integrated school-owned dialing is a separate optional future project. Never silently audio-record calls; review consent and local law first. Child safeguarding matters are handled by designated humans and may require holding parent notification if safety is at risk. **No automatic AI discipline, case closure, provider activation or live messaging.**
+
+
+## 10. Urdu and English for Individual, Bulk and Automated Messages
+
+[Full language requirements and draft message examples](BILINGUAL_LANGUAGE_POLICY.md).
+
+- School content composer has **Urdu / English / Bilingual** selection, parent preferred language and reviewer-approved localized template versions.
+- For bulk WhatsApp and SMS, recipient segments use verified guardian preference to select Urdu/English locale variants or a school-approved combined copy. Preserve preview, recipient count, delivered language and consent.
+- Meta-approved localized WhatsApp templates must be separately approved as required. Do not treat a translated text as automatically authorized for outbound bulk messages.
+- SMS Unicode/RTL support and long bilingual message segment cost checks required; provider support, message limits and actual price to be confirmed before any activation.
+- Inbound WhatsApp handler accepts Urdu and English; for uncertain language, mixed text, private financial/attendance case details, or safeguarding, use school-verified portal links or trained human handoff, not speculative translation/disclosure.
+- Store original inbound/outbound text, locale, template version, staff approvals and delivery status in permission-protected school-owned audit history. Sensitive body requires restricted access/retention.
+- Nothing is connected or sent. **Requirements only.**
