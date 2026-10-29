@@ -219,3 +219,20 @@ No credible binding budget or completion date exists without: enrolled student c
 | 8 Independent QA | Data isolation, case subject conflict of interest, child safeguarding, fair nonpunitive reporting, audit, message and call log acceptance |
 
 **Gate:** Do not publish public teacher complaint rankings, share child sensitive case contents with unverified guardians, or automate disciplinary punishment. Complaint counts distinguish allegations, duplicates and substantiated findings. No real communication without school-approved consent and provider policy. No call audio recording by default. School retains all data and support permission.
+
+
+## Bilingual acceptance requirement — Urdu + English (confirmed 2026-10-29)
+
+[Detailed bilingual design & examples](BILINGUAL_LANGUAGE_POLICY.md). This is a **cross-cutting requirement** across the existing nine phases, not a new phase and not approval to code.
+
+| Phase | Language deliverable |
+| --- | --- |
+| 0 Discovery | Parent/teacher language needs, school terminology, approval process for official Urdu/English messages, optional bilingual default |
+| 1 Architecture | Urdu Unicode + RTL rendering policy, immutable original-language content, localized versions, signed/approved template mapping and language-aware audit records |
+| 2 Portals | English-first navigation, parent language preference, complaint/message editors and content display in Urdu or English |
+| 4 Fee | Confirm fee reminders, balances, PKR numbers, receipts and parent notices display correctly in authorized language |
+| 6 Meetings & Complaints | Parent/teacher complaints and school replies in Urdu/English; reviewed translations separated from original cases |
+| 7 WhatsApp/SMS | Urdu/English/bilingual templates, bulk segmentation by language, inbound language detection/handoff, Unicode SMS cost and provider restrictions |
+| 8 QA | End-to-end handset, browser, print/export, privacy, approved translation, consent, template, encoding and recipient-language tests |
+
+Do not auto-translate sensitive child/staff allegations for direct dispatch without human sign-off. UI defaults English, but user-generated communications and complaint records must remain correctly legible in Urdu or English. **No coding or integration activation authorized.**
