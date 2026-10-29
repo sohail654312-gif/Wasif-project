@@ -10,7 +10,7 @@
 
 ## Current prioritized requirements (supersedes earlier broad feature proposals)
 
-**Read:** [Role-Based Parent & School Portals — Fingerprint, Fees, Accounting & Attendance](PORTALS_AND_WORKFLOWS.md). This document specifies the user-confirmed five priorities, two portal experiences, role-scoped views, shared source-of-truth records, privacy gates and noncoding status. All other suggested features remain optional until explicitly approved.
+**Read:** [Role-Based Parent & School Portals — Fingerprint, Fees, Accounting & Attendance](PORTALS_AND_WORKFLOWS.md) and [School-owned WhatsApp + SMS Messaging Automation](COMMUNICATIONS_AUTOMATION.md). The five initial priorities remain, with a **sixth confirmed communications module** (WhatsApp and SMS, bulk messaging, inbound WhatsApp automated handling, and human takeover). The two portal experiences, permission-scoped data, single source of truth and noncoding status remain unchanged. Other proposals are optional until approved.
 
 ## مقصد / Vision
 
@@ -224,3 +224,7 @@ Each boundary logs access and avoids raw biometric transfer. School administrati
 Exact fingerprint hardware/vendor; number of staff/students and peak entry time; whether arrival only or arrival/departure; school electricity/internet reliability; campus layout and terminals count; school-owned cloud vs on-prem vs hybrid; guardian consent process; legal/privacy professional approval; support authorization method; system/data/source ownership contract; budget and maintenance responsibilities.
 
 **No student or teacher fingerprints have been collected; no scanner/device, hosted infrastructure or live service has been provisioned by this change.**
+
+## 12) WhatsApp, SMS, Bulk Messaging & Inbound Auto-Handling (confirmed 2026-10-29)
+
+**Read [full requirements](COMMUNICATIONS_AUTOMATION.md).** This school-only module adds: automated attendance/fee/meeting notices, school-approved bulk WhatsApp/SMS by class or audience group, guardian opt-in/opt-out and delivery status, school-owned shared inbox for incoming WhatsApp conversations, safe auto-replies for public school FAQs, verified portal links for personal attendance/fee queries, and human staff handoff. No unauthorized WhatsApp blasting, no student data disclosure to unverified senders, no autonomous payment posting. Providers and costs not selected. **Documentation only; no coding, API setup or live sends.**
