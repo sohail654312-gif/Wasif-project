@@ -241,3 +241,16 @@ Exact fingerprint hardware/vendor; number of staff/students and peak entry time;
 ## 14) Bilingual Urdu + English — Confirmed Communication & Case Language Requirements (2026-10-29)
 
 [Full language design: English-first application, Urdu/English/Bilingual communications, complaints, templates and records](BILINGUAL_LANGUAGE_POLICY.md). Keep the default app interface English, but teachers, school administration and guardians can use Urdu or English for SMS, bulk WhatsApp, notices, attendance/fee reminders, complaint creation and school-approved responses. Each parent may have a preferred language; authorized staff can select Urdu, English or both for a message/campaign. Preserve the **original text and language** in complaints, school logs and case history; human-reviewed translated versions are labelled separately, never overwrite records. Urdu RTL and Unicode, SMS segment/cost preview, approved WhatsApp locale templates, guardian privacy, consent and human review are required. **Only documented, no coding or live messaging.**
+
+
+## 15) Cost-minimization technology decision — Frappe-free option requested (2026-10-29)
+
+**Client direction:** minimize ongoing cost, preferably avoid **Frappe Cloud / Frappe Framework / ERPNext**. This replaces earlier *preferred Frappe + ERPNext* solution as the default implementation assumption, subject to a technical feasibility and total-cost review. The open-source Frappe source itself is free; removing it does **not** by itself remove hosting cost or guarantee lower development cost.
+
+**Critical business continuity rule:** removing Frappe must **not** remove fee collection records or school accounting. Keep charged / paid / part-paid / unpaid / overdue student fees, cash and bank entry, verified payment allocation, receipts, income, expenses, authorized adjustments, reconciled accounts, per-parent fee statements and school finance reports.
+
+**Lowest-cost candidate path:** assess Gibbon (free open-source school management with billing, invoice/payment tracking and expenses) versus a light, school-owned purpose-built application. Gibbon's finance features must not be mistaken for independently verified comprehensive general-ledger/double-entry accounting; if full accounting is required, evaluate a separately compatible accounting component/verified adapter or budget the bespoke financial controls. Avoid combining incompatible systems without tests.
+
+**Budget:** compare hosting at 2GB/4GB/8GB against measured workload, backups, migration, support, security/privacy and development time. No claim that small servers are production-sufficient before load tests. For a school-only local instance, on-prem is a candidate but needs power, UPS, backups and support. For remote parent access, reliable Internet-facing secure hosting or equivalent protected access is required.
+
+**Scope:** fees and accounting remain in the dedicated school-owned design; WhatsApp/SMS and fingerprint hardware are temporarily excluded from the low-cost baseline but remain documented as optional later modules. No coding or existing repo modification permitted without further instruction.
