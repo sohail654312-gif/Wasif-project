@@ -204,3 +204,18 @@ No credible binding budget or completion date exists without: enrolled student c
 - Existing Codeedge repositories remain untouched; Wasif-project may carry public **non-sensitive planning documents only**.
 
 **Roadmap baseline: v0.1 / Awaiting school discovery and approvals.**
+
+## New scope item — Phase insert: Complaint Center & Student Concerns (module 7)
+
+[Full complaint/case requirements](COMPLAINTS_AND_DISCIPLINE.md) are **confirmed as desired functionality** while implementation remains unauthorized. The existing nine phases 0–8 are unchanged in count; expand them as follows:
+
+| Phase | Additions |
+| --- | --- |
+| 0 Discovery | Complaint handling policies, child safety escalation, subject/alternate reviewer, reporting routes, guardian contact and case retention rules |
+| 1 Architecture | Data model for protected cases, allegations versus findings, appeal/reopen, assignment and encrypted communications, permission matrix |
+| 2 Portals | Parent Submit/My Complaints; School Principal Case Dashboard; Teacher Report Student Concern; confidential safeguarding lane |
+| 6 Workflows | Case intake, triage, investigation, human resolution, child-concern history, teacher-specific counts by status, approved parent response |
+| 7 Communications | Case-linked approved WhatsApp/SMS notification, guardian verification, staff phone contact log; future optional telephony after approval |
+| 8 Independent QA | Data isolation, case subject conflict of interest, child safeguarding, fair nonpunitive reporting, audit, message and call log acceptance |
+
+**Gate:** Do not publish public teacher complaint rankings, share child sensitive case contents with unverified guardians, or automate disciplinary punishment. Complaint counts distinguish allegations, duplicates and substantiated findings. No real communication without school-approved consent and provider policy. No call audio recording by default. School retains all data and support permission.
