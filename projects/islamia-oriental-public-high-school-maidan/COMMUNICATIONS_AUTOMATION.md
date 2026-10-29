@@ -114,3 +114,7 @@ All data school-scoped, access controlled, auditable. Encryption, backup, retent
 - Hosting and data retention, notification delivery SLAs and school-specific legal requirements.
 
 **Status: documentation only. No actual automation, bulk campaign, messaging provider or AI webhook is active.**
+
+## 9. Case-linked Complaints and Guardian Calling (added 2026-10-29)
+
+See [Complaint Center & Student Concerns](COMPLAINTS_AND_DISCIPLINE.md). Authorized teacher/principal may propose school-approved messages about a child's concern. After consent/policy checks and safety review, the system can send privacy-minimized WhatsApp/SMS to the **verified** linked guardian, record per-case message body/template reference, school approver, attempts, delivery status and human response. Phone contact initially is staff-initiated with a call-log form (attempt timestamp, authorized caller, reached/unreachable, notes and follow-up); integrated school-owned dialing is a separate optional future project. Never silently audio-record calls; review consent and local law first. Child safeguarding matters are handled by designated humans and may require holding parent notification if safety is at risk. **No automatic AI discipline, case closure, provider activation or live messaging.**
