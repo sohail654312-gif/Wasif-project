@@ -236,3 +236,15 @@ No credible binding budget or completion date exists without: enrolled student c
 | 8 QA | End-to-end handset, browser, print/export, privacy, approved translation, consent, template, encoding and recipient-language tests |
 
 Do not auto-translate sensitive child/staff allegations for direct dispatch without human sign-off. UI defaults English, but user-generated communications and complaint records must remain correctly legible in Urdu or English. **No coding or integration activation authorized.**
+
+
+## Cost-controlled implementation option — no Frappe assumed (2026-10-29)
+
+Latest commercial design preference is to **avoid depending on Frappe Cloud, Frappe Framework, and ERPNext** in pursuit of minimum overall cost. This is a preference and subject to feasibility/total-cost comparison, not evidence that Frappe is paid software. Do not remove fee collection or accounting.
+
+- **Keep in every baseline:** student/guardian records; teacher/manual attendance; role-based School/Parent portals where remote parent access is approved; monthly fee schedule, invoices/charges, partial/verified payment allocations, printed receipts, due and arrears reports; school cash/bank income and expenses, controlled corrections, reconciliation and audit; complaint center and bilingual Urdu/English records.
+- **Alternatives to investigate:** (A) Gibbon free school management with existing finance/billing features; (B) slim custom Codeedge school app and proven free database, modular financial engine. Verify whether a separate double-entry accounting system is necessary rather than treating simple fee billing as full accounting.
+- **Costs still real:** servers for online access, safe backups/recovery, SSL/domain, administration, support, developer time, test equipment and training. Compare one school-owned VPS versus school local hosting on actual workload.
+- **Deferred from low-cost scope:** fingerprint hardware integrations and paid WhatsApp/SMS usage. Keep their specifications for potential later purchase and deployment.
+- **Financial integrity:** no unverified parent payments marked Paid, no silent overwrites, approved refunds/waivers, reconciliation to receipt and bank/cashbook; guardian sees only linked child's balances. Online payment gateway is optional; basic in-person payment recording is not.
+- **Implementation remains NOT STARTED.** Do not select a final stack or alter other Codeedge products without school approval and testing.
