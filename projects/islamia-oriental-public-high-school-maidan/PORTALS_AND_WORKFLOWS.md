@@ -235,3 +235,14 @@ DEDICATED SCHOOL SYSTEM
 - WhatsApp inbound bot answers verified school FAQs, routes personal financial/attendance queries to guardian-authenticated access and escalates sensitive or uncertain cases to authorized staff.
 - Meta-approved templates/service windows, consent, sender policy, anti-spam, provider fees, child-data protection, support-access restrictions, retries and duplicate suppression are release gates.
 - **Not implemented / no provider connected or live messages sent.**
+
+## 12. Complaint Center — seventh confirmed core module
+
+[Detailed design: Parent Complaints, Teacher-wise analytics, Student Concerns, WhatsApp/SMS/Phone Contact and protected case history](COMPLAINTS_AND_DISCIPLINE.md).
+
+- **Parent Portal:** submit complaint against teacher, school staff/administration, attendance or fee service; own-case tracking and approved outcome; child-specific concern notices and reply/meeting request.
+- **School Portal — Principal/Authorized Case Manager:** confidential complaint inbox, assignee/investigator, teacher-by-teacher complaint counts by **filed vs pending vs substantiated vs unsubstantiated** and duplicate flags; authorized student concern history and follow-up. An allegation never automatically proves misconduct.
+- **Teacher:** report fact-based concern about assigned child; propose permitted guardian notification subject to school approval, review own submissions; no access to unrelated parents' complaints or sensitive investigative files.
+- **Communication:** approved, privacy-minimized WhatsApp/SMS or staff phone calls; log attempts, approved message content reference, timestamp, status, and call disposition; audio recording optional only after explicit lawful authorization/consent.
+- **Safety:** alternate reporting path for complaints against the principal, restricted safeguarding route, avoid automatic guardian notifications if they could jeopardize child safety, fair human review, no automatic disciplinary decisions.
+- **Stage:** documented only; no implementation or live sends.
