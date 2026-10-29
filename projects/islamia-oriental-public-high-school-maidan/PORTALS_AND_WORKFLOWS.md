@@ -246,3 +246,14 @@ DEDICATED SCHOOL SYSTEM
 - **Communication:** approved, privacy-minimized WhatsApp/SMS or staff phone calls; log attempts, approved message content reference, timestamp, status, and call disposition; audio recording optional only after explicit lawful authorization/consent.
 - **Safety:** alternate reporting path for complaints against the principal, restricted safeguarding route, avoid automatic guardian notifications if they could jeopardize child safety, fair human review, no automatic disciplinary decisions.
 - **Stage:** documented only; no implementation or live sends.
+
+
+## 13. Bilingual Urdu-English Content Across Parent and School Portals
+
+[Detailed policy and acceptance scenarios](BILINGUAL_LANGUAGE_POLICY.md).
+
+- School Portal navigation remains **English-first**; teacher, principal, finance and office forms for communication and complaint narrative must accept English, Urdu and optionally combined copy, with RTL and Unicode support.
+- Parent Portal navigation may remain English-first, while fee notices, attendance alerts, complaint submissions, school replies, guardian notices and meeting notifications can be Urdu, English or approved bilingual.
+- Verified guardian language preference applies consistently to approved WhatsApp/SMS and portal communication. Do not use language switching to bypass guardian link checks or staff authorization.
+- Original language is never overwritten; complaint/notice/audit records preserve exactly what was submitted/sent. Any translated text is distinct, labelled and reviewed appropriately for sensitive school cases.
+- Bilingual delivery and mixed Urdu/English amount/date/ID rendering must be acceptance-tested. **Planning only; no code.**
