@@ -22,3 +22,6 @@ This is a **public** repository. Never commit real student or parent information
 New project requirements should be collected and reviewed before implementation.
 
 - [School Complaints, Discipline & Guardian Contact Center](projects/islamia-oriental-public-high-school-maidan/COMPLAINTS_AND_DISCIPLINE.md) — seventh confirmed module; confidential parent/staff complaints, teacher statistics, student concerns and approved WhatsApp/SMS/phone contact. Requirements only.
+
+
+- [Bilingual Urdu-English School Communications & Complaint Language Policy](projects/islamia-oriental-public-high-school-maidan/BILINGUAL_LANGUAGE_POLICY.md) — English-first app UI with Urdu/English/Bilingual SMS, WhatsApp, bulk notices, school logs and complaint workflows. Documentation only.
